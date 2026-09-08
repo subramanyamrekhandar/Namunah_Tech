@@ -100,7 +100,21 @@ export default async function WorkDetailPage({ params }: Props) {
               </a>
             ) : null}
 
-            <Link href="/contact" className="btn-primary mt-3 w-full">
+            {work.playStoreUrl ? (
+              <a
+                href={work.playStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost mt-3 w-full"
+              >
+                Get on Google Play ↗
+              </a>
+            ) : null}
+
+            <Link
+              href="/contact"
+              className={`btn-primary w-full ${work.externalUrl || work.playStoreUrl ? "mt-3" : "mt-8"}`}
+            >
               Start a similar project
             </Link>
           </aside>

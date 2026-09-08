@@ -9,6 +9,7 @@ export type Work = {
   stack: string[];
   accent: string;
   externalUrl?: string;
+  playStoreUrl?: string;
 };
 
 export const works: Work[] = [
@@ -65,6 +66,26 @@ export const works: Work[] = [
     stack: ["Web platform", "Event UX", "Responsive marketing site"],
     accent: "#4F46E5",
     externalUrl: "https://qntern.com/",
+  },
+  {
+    slug: "docquest",
+    title: "DocQuest NEET Prep App",
+    client: "DocQuest",
+    category: "Mobile · EdTech",
+    summary:
+      "NEET preparation app with personalized mock tests, daily quizzes, detailed reviews, and performance analytics for focused student improvement.",
+    description:
+      "Namunah Technologies helped deliver DocQuest as a student-facing learning product—mock and practice tests by subject, topic, and difficulty; daily quiz modes; answer reviews with explanations; and progress insights across web and Android (Google Play).",
+    outcomes: [
+      "Mock and practice tests filtered by subject, topic, and difficulty",
+      "Daily quiz mode with quick feedback and detailed answer review",
+      "Performance insights, streaks, and secure profile management on Android",
+    ],
+    stack: ["Android app", "EdTech product UX", "Subscriptions & analytics"],
+    accent: "#0E7490",
+    externalUrl: "https://www.docquest.in/",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.docquest.student",
   },
   {
     slug: "namunah-ai-platform",

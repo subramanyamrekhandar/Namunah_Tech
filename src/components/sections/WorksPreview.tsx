@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { works } from "@/data/works";
 
-export function WorksPreview({ limit = 4 }: { limit?: number }) {
+export function WorksPreview({ limit = 5 }: { limit?: number }) {
   const items = works.slice(0, limit);
 
   return (
@@ -12,9 +12,9 @@ export function WorksPreview({ limit = 4 }: { limit?: number }) {
             <p className="section-eyebrow">Our work</p>
             <h2 className="section-title">Client platforms and our own product.</h2>
             <p className="section-copy">
-              Real engagements for Happy Donors, Ravi Teja Home Foods, and
-              Qntern—plus Namunah.AI, the AI communication platform we build
-              in-house.
+              Real engagements for Happy Donors, Ravi Teja Home Foods, Qntern,
+              and DocQuest—plus Namunah.AI, the AI communication platform we
+              build in-house.
             </p>
           </div>
           <Link href="/work" className="btn-ghost shrink-0">

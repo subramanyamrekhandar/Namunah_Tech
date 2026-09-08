@@ -10,11 +10,11 @@ export function Clients() {
           <h2 className="section-title">Trusted by teams we build with.</h2>
           <p className="section-copy">
             Selected organisations we partner with—across healthcare, social
-            impact, consumer brands, and student talent platforms.
+            impact, consumer brands, student talent, and NEET prep platforms.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {clients.map((client) => (
             <article
               key={client.id}
@@ -64,6 +64,16 @@ export function Clients() {
                     Visit website
                     <span aria-hidden>↗</span>
                   </a>
+                  {client.playStoreUrl ? (
+                    <a
+                      href={client.playStoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-[var(--ink)] hover:text-[var(--accent)]"
+                    >
+                      Google Play ↗
+                    </a>
+                  ) : null}
                   <Link
                     href={`/work/${client.workSlug}`}
                     className="text-sm font-semibold text-[var(--ink)] hover:text-[var(--accent)]"

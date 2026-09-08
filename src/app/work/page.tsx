@@ -7,12 +7,12 @@ import { works, type Work } from "@/data/works";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Namunah Technologies work—Happy Donors, Ravi Teja Home Foods, Qntern, and Namunah.AI voice platform case studies.",
+    "Namunah Technologies work—Happy Donors, Ravi Teja Home Foods, Qntern, DocQuest, and Namunah.AI case studies.",
   alternates: { canonical: "/work" },
   openGraph: {
     title: `Work | ${siteConfig.name}`,
     description:
-      "Client platforms and our product: Happy Donors, Ravi Teja Home Foods, Qntern, and Namunah.AI.",
+      "Client platforms and our product: Happy Donors, Ravi Teja Home Foods, Qntern, DocQuest, and Namunah.AI.",
     url: `${siteConfig.url}/work`,
   },
 };
@@ -34,6 +34,11 @@ const visuals: Record<
   qntern: {
     label: "Live · qntern.com",
     motif: "◇",
+    scene: "edu",
+  },
+  docquest: {
+    label: "Live · docquest.in · Play Store",
+    motif: "▣",
     scene: "edu",
   },
   "namunah-ai-platform": {
@@ -92,8 +97,8 @@ export default function WorkPage() {
           </h1>
           <p className="section-copy mt-5 max-w-2xl">
             Attractive, production-ready digital products for Happy Donors,
-            Ravi Teja Home Foods, and Qntern—plus Namunah.AI, our own voice AI
-            platform.
+            Ravi Teja Home Foods, Qntern, and DocQuest—plus Namunah.AI, our own
+            voice AI platform.
           </p>
         </div>
       </section>

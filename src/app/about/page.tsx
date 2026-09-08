@@ -58,8 +58,8 @@ export default function AboutPage() {
               <p>
                 We are a product and platform engineering company. Alongside
                 client delivery for organisations such as Happy Donors, Ravi
-                Teja Home Foods, and Qntern, we ship Namunah.AI—voice agents in
-                20+ Indian languages across phone, WhatsApp, and web.
+                Teja Home Foods, Qntern, and DocQuest, we ship Namunah.AI—voice
+                agents in 20+ Indian languages across phone, WhatsApp, and web.
               </p>
               <p>
                 Whether you need a customer-facing digital product or a

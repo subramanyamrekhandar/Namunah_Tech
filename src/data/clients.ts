@@ -7,6 +7,7 @@ export type Client = {
   website: string;
   accent: string;
   workSlug: string;
+  playStoreUrl?: string;
 };
 
 export const clients: Client[] = [
@@ -42,6 +43,19 @@ export const clients: Client[] = [
     website: "https://qntern.com/",
     accent: "#4F46E5",
     workSlug: "qntern",
+  },
+  {
+    id: "docquest",
+    name: "DocQuest",
+    industry: "EdTech · NEET Prep",
+    summary:
+      "NEET preparation platform with personalized mock tests, daily quizzes, and performance analytics—available on web and Google Play.",
+    focus: ["Mobile app", "Mock tests", "Learning analytics"],
+    website: "https://www.docquest.in/",
+    accent: "#0E7490",
+    workSlug: "docquest",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.docquest.student",
   },
 ];
 
